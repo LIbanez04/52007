@@ -20,7 +20,9 @@ REQUISITOS PARA QUE FUNCIONE DE MANERA CORRECTA:
     https://www.oracle.com/java/technologies/downloads/#java11
     (Seleccionar Segun su Sistema Operativo )  
  5. Tener Instalado Antlr como extensión de VS code
-   ![Captura de pantalla 2025-05-16 133939](https://github.com/user-attachments/assets/8e696f89-9d85-4469-9834-737c1bcc28ae)
+
+  ![Captura de pantalla 2025-05-17 151929](https://github.com/user-attachments/assets/53e2eb72-a32c-4f97-a1f9-df7a06c6a002)
+
 
 
 Importante: Luego de instalar la extensión reinicia VS Code para que tome los cambios.
@@ -31,7 +33,9 @@ Instalacion del proyecto: Una vez ya instalados los requirimientos previos los s
 Archivo/Preferencias/Configuración ( CTL + ,) y busca las preferencias de ANTLR. Baja hasta
 la sección Antlr4:Generation y edita settings.json. 
 
-![Captura de pantalla 2025-05-16 134954](https://github.com/user-attachments/assets/9c548d40-4ea5-42df-a821-58ab552e8dae)
+
+![Captura de pantalla 2025-05-17 152002](https://github.com/user-attachments/assets/e0d9c78f-1a5d-42d2-9f8e-0bc757dcbb86)
+
  
  
  Borrar todo lo que se encuentre y reemplazar por : 
@@ -65,7 +69,9 @@ la sección Antlr4:Generation y edita settings.json.
 
        . code
 
-      ![Captura de pantalla (122)](https://github.com/user-attachments/assets/d8ebca0f-cafe-4da5-9af6-42d4862fa621)
+
+     ![Captura de pantalla (127)](https://github.com/user-attachments/assets/57a17d08-dcb9-4b00-ba83-42c7043c76fd)
+
 
 
       - Si la instalacion se realizo correctamente se deberian ver el proyecto en VS code.
@@ -82,7 +88,8 @@ FUNCIONAMIENTO DEL ANALIZADOR:
 4. Utilizando el Plugin ANTLR4 para construir el arbol de sintaxis para la cadena ingresada en el archivo input.txt se debe presionar F5.
 5. Para ver el analizador funcionar concretamente nos vamos al directorio raiz del proyecto y abrimos el terminal
 
-    ![Captura de pantalla (123)](https://github.com/user-attachments/assets/0fa41148-1d6d-4940-912f-7336d5a2c7aa)
+   ![Captura de pantalla (128)](https://github.com/user-attachments/assets/709944ef-eb4c-44af-8182-9c7957420993)
+
 
 
 6. Una vez abierto el terminal debemos ejecutar el siguiente comando: npm start
@@ -94,42 +101,47 @@ FUNCIONAMIENTO DEL ANALIZADOR:
     a. Tabla de Tokens donde identificara cual es el Lexema y cual es el toquen asociado:
 
 
-    ![Captura de pantalla 2025-05-16 223634](https://github.com/user-attachments/assets/09791943-d56c-42a4-8c30-a6825583a1d5)
+  ![Captura de pantalla 2025-05-17 152604](https://github.com/user-attachments/assets/5d06485c-3b35-4ed2-a536-01b54b34b203)
 
-
-    b. Arbol de analisis sintactico:
-
-
-   ![Captura de pantalla 2025-05-16 223910](https://github.com/user-attachments/assets/896f42f1-1b51-40ed-8a03-88a30e9ef009)
 
    
-    c . La traduccion de la entrada al Lenguaje de Programacion JAVASCRPT:
+   b. Arbol de analisis sintactico:
 
 
-    ![Captura de pantalla 2025-05-16 224021](https://github.com/user-attachments/assets/cb3de902-66a6-4145-a5c1-6318f0af8625)
+  ![Captura de pantalla 2025-05-17 152649](https://github.com/user-attachments/assets/3a47afd9-0ef6-4d4e-8520-249ebde94d23)
+
+   
+  c . La traduccion de la entrada al Lenguaje de Programacion JAVASCRPT:
+
+
+   ![Captura de pantalla 2025-05-17 152727](https://github.com/user-attachments/assets/4e5e4df9-18ae-4b28-bbc5-fbb3ba3821aa)
+
 
    d. El analisis respecto a la entrada, es decir determina si la entrada es valida o no y nos arrojara un "true" si la entrada es valida
 
-    ![Captura de pantalla 2025-05-16 224119](https://github.com/user-attachments/assets/57c7ba11-aab8-495e-ac72-f82cd4faefdc)
-  ![Captura de pantalla 2025-05-16 224126](https://github.com/user-attachments/assets/4e1bd1ee-1a41-4b3f-9d2a-5642335e94d9)
+   ![Captura de pantalla 2025-05-17 152756](https://github.com/user-attachments/assets/4789a6da-a4fd-4321-8d5a-44a655e321e0)
 
+ 
 9. En caso de ser una entrada invalida(Lexica o sintacticamente) puesta previamente en el acrhivo input.txt.
 
    (En este caso utilice la cadena p # q) debiendo mostrar lo siguiente:
 
     a. Tipo de Error Detectado (LEXICO O SINTACTICO) 
 
-      ![Captura de pantalla 2025-05-16 224724](https://github.com/user-attachments/assets/511b9e06-8d72-42bd-918f-582b176f9e3c)
+
+      ![Captura de pantalla 2025-05-17 152854](https://github.com/user-attachments/assets/76a0ae67-b7ac-4a62-837e-cc7a6895612e)
+
 
 
      b. Linea donde se produce el error
 
 
-      ![Captura de pantalla 2025-05-16 224816](https://github.com/user-attachments/assets/d0de621d-954f-4ab4-aad8-e54a3ab8df1f)
+      ![Captura de pantalla 2025-05-17 152924](https://github.com/user-attachments/assets/f85a5b24-0465-4d84-bc18-2c7a9e5bc0d1)
+
 
     c. El motivo del Error
   
-      ![image](https://github.com/user-attachments/assets/e741ac31-ecbc-427f-b4b9-69007ceb5c41)
+      ![Captura de pantalla 2025-05-17 152950](https://github.com/user-attachments/assets/7c4a0892-c4cb-4cee-847a-c642fc75c6d3)
 
 
  
